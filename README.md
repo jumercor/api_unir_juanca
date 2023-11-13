@@ -1,6 +1,13 @@
 # api_unir_juanca
 Esta es la api creada para el blog, en dónde se pueden consultar y crear autores y blogs
 
+Las url disponibles son:
+
+GET https://localhost:4000/api        -> entrega un mensaje generico al consultar el fichero principal /api
+GET - POST https://localhost:400/api/autores  -> con GET obtiene la lista de autores y con POST puedes crear un nuevo autor incluyendo el nombre, email, imagen en el body. Con POST puedes crear un nuevo autor.
+GET - POST https://localhost:4000/api/posts   -> con GET obtiene la lista de posts y con POST puedes crear un nuevo autor incluyendo el nombre, email, imagen en el body. Con POST puedes crear un nuevo autor.
+GET https://localhost:4000/api/posts/:id_autor    -> con GET e indicando el id_autor puedes obtener los posts de ese autor
+
 Ejecutar las siguientes query para crear tablas en sql y poblarlas
 
 CREATE SCHEMA `Unir` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci ;
